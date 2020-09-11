@@ -26,7 +26,9 @@ const defaultProps = {
 /**
  * Styles the component container
  */
-const Container = styled("div")((props) => ({}));
+const Container = styled("article")((props) => ({
+  margin: "6vmax 0",
+}));
 
 /**
  * Displays the component

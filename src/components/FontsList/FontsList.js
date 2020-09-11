@@ -24,7 +24,7 @@ const defaultProps = {
 /**
  * Styles the component container
  */
-const Container = styled("div")((props) => ({}));
+const Container = styled("section")((props) => ({}));
 
 /**
  * Displays the component
@@ -33,9 +33,9 @@ const FontsList = (props) => {
   const { fonts, displayText } = props;
 
   const fontsList = fonts.map((item) => {
-    const { id } = props;
+    const { id } = item;
 
-    return <FontsListItem id={id} font={item} displayText={displayText} />;
+    return <FontsListItem key={id} font={item} displayText={displayText} />;
   });
 
   return <Container className="FontsList">{fontsList}</Container>;
