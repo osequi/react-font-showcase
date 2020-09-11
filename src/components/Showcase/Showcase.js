@@ -25,24 +25,7 @@ const Container = styled("section")((props) => ({
  * Displays the component
  */
 const Showcase = (props) => {
-  return (
-    <>
-      <Head>
-        <style>
-          {`
-			  @font-face {
-		  	  font-family: "BlackMambaTrial-Venom-WebTrial";
-		  	  font-style: normal;
-		  	  font-weight: normal;
-		  	  src: local("/fonts/black-mamba/BlackMambaTrial-Venom-WebTrial"),
-		  	    url("/fonts/black-mamba/BlackMambaTrial-Venom-WebTrial.woff") format("woff");
-		  	}
-  `}
-        </style>
-      </Head>
-      <Container className="Showcase">Showcase</Container>
-    </>
-  );
+  return <Container className="Showcase">Showcase</Container>;
 };
 
 Showcase.propTypes = propTypes;

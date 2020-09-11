@@ -1,7 +1,13 @@
+import Fonts from "../src/components/Fonts";
 import Showcase from "../src/components/Showcase";
 
 const Home = () => {
-  return <Showcase />;
+  return (
+    <>
+      <Fonts />
+      <Showcase />
+    </>
+  );
 };
 
 export default Home;
