@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "Modelo-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Modelo-Black"), url("Modelo-Black.woff") format("woff");
+}

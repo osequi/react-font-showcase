@@ -53,6 +53,16 @@ const defaultProps = {
       name: "Masthead Black",
       familyName: "masthead-black",
     },
+    {
+      id: shortid.generate(),
+      name: "Escher",
+      familyName: "escher",
+    },
+    {
+      id: shortid.generate(),
+      name: "Modelo Black",
+      familyName: "Modelo-Black",
+    },
   ],
 };
 
@@ -91,6 +101,8 @@ const Fonts = (props) => {
 		  @import '/fonts/mandatetrinkaAD68/mandatetrinkaAD68.css';
 		  @import '/fonts/Desk-bound/desk-bound.css';
 		  @import '/fonts/Masthead-Black/masthead-black.css';
+		  @import '/fonts/Escher/escher.css';
+		  @import '/fonts/Maxitype-Modelo/Web/modelo-black.css';
 		  `}</style>
     </Head>
   );

@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "escher";
+  font-style: normal;
+  font-weight: normal;
+  src: local("escher"), url("escher.ttf") format("truetype");
+}
