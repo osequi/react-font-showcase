@@ -26,8 +26,8 @@ const Container = styled("section")((props) => ({
 const Showcase = (props) => {
   return (
     <Container className="Showcase">
-      <Font family="BlackMamba">Black mamba</Font>
-      <Font family="GalapagosABCTrialBlack">Galapagos ABC Trial Black</Font>
+      <Font name="Black Mamba">Black mamba</Font>
+      <Font name="Galapagos ABC Black">Galapagos ABC Trial Black</Font>
     </Container>
   );
 };

@@ -7,7 +7,9 @@ import { getFontFamilyCSS } from "../Fonts";
  * Defines the prop types
  */
 const propTypes = {
-  family: PropTypes.string,
+  id: PropTypes.string,
+  name: PropTypes.string,
+  familyName: PropTypes.string,
   children: PropTypes.any,
 };
 
@@ -15,7 +17,9 @@ const propTypes = {
  * Defines the default props
  */
 const defaultProps = {
-  family: "monospace",
+  id: "1",
+  name: "Monospace",
+  familyName: "monospace",
   children: "Font",
 };
 
@@ -30,7 +34,7 @@ const Container = styled.article`
  * Displays the component
  */
 const Font = (props) => {
-  const { family, children } = props;
+  const { children } = props;
 
   const css = getFontFamilyCSS(props);
 

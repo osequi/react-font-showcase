@@ -1,6 +1,31 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Head from "next/head";
 import { css } from "styled-components";
+import shortid from "shortid";
+
+import { FontPropTypes, FontDefaultProps } from "../Font";
+
+/**
+ * Defines the prop types
+ */
+const propTypes = {
+  fonts: PropTypes.arrayOf(PropTypes.shape(FontPropTypes)),
+};
+
+/**
+ * Defines the default props
+ */
+const defaultProps = {
+  fonts: [
+    { id: shortid.generate(), name: "Black Mamba", familyName: "BlackMamba" },
+    {
+      id: shortid.generate(),
+      name: "Galapagos ABC Black",
+      familyName: "GalapagosABCTrialBlack",
+    },
+  ],
+};
 
 /**
  * Defines the font styles
@@ -18,17 +43,19 @@ const MonospaceCSS = css`
 `;
 
 /**
- * Returns a specific `font-family` CSS value for a font
- * @param  {object} props The props identifying a font family
- * @return {object}       The CSS definition for the font family
+ * Returns a specific `font-familyName` CSS value for a font
+ * @param  {object} props The props identifying a font familyName
+ * @return {object}       The CSS definition for the font familyName
  */
 const getFontFamilyCSS = (props) => {
-  const { family } = props;
+  const { name } = props;
 
-  switch (family) {
-    case "BlackMamba":
+  console.log("name:", name);
+
+  switch (name) {
+    case "Black Mamba":
       return BlackMambaCSS;
-    case "GalapagosABCTrialBlack":
+    case "Galapagos ABC Black":
       return GalapagosABCTrialBlackCSS;
     default:
       return MonospaceCSS;
@@ -49,5 +76,12 @@ const Fonts = (props) => {
   );
 };
 
+Fonts.propTypes = propTypes;
+Fonts.defaultProps = defaultProps;
+
 export default Fonts;
-export { getFontFamilyCSS };
+export {
+  propTypes as FontsPropTypes,
+  defaultProps as FontsDefaultProps,
+  getFontFamilyCSS,
+};

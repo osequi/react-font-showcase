@@ -1,1 +1,6 @@
-export { default, getFontFamilyCSS } from "./Fonts";
+export {
+  default,
+  FontsPropTypes,
+  FontsDefaultProps,
+  getFontFamilyCSS,
+} from "./Fonts";
