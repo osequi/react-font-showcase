@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
+import { getFontFamilyCSS } from "../Fonts";
 
 /**
  * Defines the prop types
@@ -19,21 +20,6 @@ const defaultProps = {
 };
 
 /**
- * Defines the font styles
- */
-const BlackMambaCSS = css`
-  font-family: "BlackMambaTrial-Venom-WebTrial";
-`;
-
-const GalapagosABCTrialBlackCSS = css`
-  font-family: "GalapagosABCTrial-Black";
-`;
-
-const MonospaceCSS = css`
-  font-family: "monospace";
-`;
-
-/**
  * Defines the container
  */
 const Container = styled.article`
@@ -46,17 +32,7 @@ const Container = styled.article`
 const Font = (props) => {
   const { family, children } = props;
 
-  let css = "";
-  switch (family) {
-    case "BlackMamba":
-      css = BlackMambaCSS;
-      break;
-    case "GalapagosABCTrialBlack":
-      css = GalapagosABCTrialBlackCSS;
-      break;
-    default:
-      css = MonospaceCSS;
-  }
+  const css = getFontFamilyCSS(props);
 
   return (
     <Container className="Font" css={css}>
