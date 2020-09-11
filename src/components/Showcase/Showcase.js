@@ -1,7 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Font from "../Font";
+
+/**
+ * Imports other components and hooks
+ */
+import FontsList from "../FontsList";
 
 /**
  * Defines the prop types
@@ -26,8 +30,7 @@ const Container = styled("section")((props) => ({
 const Showcase = (props) => {
   return (
     <Container className="Showcase">
-      <Font name="Black Mamba">Black mamba</Font>
-      <Font name="Galapagos ABC Black">Galapagos ABC Trial Black</Font>
+      <FontsList />
     </Container>
   );
 };
