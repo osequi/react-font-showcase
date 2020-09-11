@@ -30,6 +30,11 @@ const Container = styled("article")((props) => ({
   margin: "6vmax 0",
 }));
 
+const Name = styled("h3")((props) => ({
+  fontFamily: "monospace",
+  fontSize: "small",
+}));
+
 /**
  * Displays the component
  */
@@ -41,6 +46,7 @@ const FontsListItem = (props) => {
 
   return (
     <Container className="FontsListItem">
+      <Name>{name}</Name>
       <Font {...font}>{text}</Font>
     </Container>
   );
