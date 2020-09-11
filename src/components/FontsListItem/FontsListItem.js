@@ -27,7 +27,11 @@ const defaultProps = {
  * Styles the component container
  */
 const Container = styled("article")((props) => ({
-  margin: "6vmax 0",
+  padding: "6vmax 0",
+  background: "white",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "space-between",
 }));
 
 const Name = styled("h3")((props) => ({
@@ -46,8 +50,8 @@ const FontsListItem = (props) => {
 
   return (
     <Container className="FontsListItem">
-      <Name>{name}</Name>
       <Font {...font}>{text}</Font>
+      <Name>{name}</Name>
     </Container>
   );
 };
