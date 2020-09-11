@@ -1,1 +1,5 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# react-font-showcase
+
+Showcase fonts with React.
+
+Visit https://react-font-showcase.vercel.app

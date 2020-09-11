@@ -1,7 +1,7 @@
-import Head from "next/head";
+import Showcase from "../src/components/Showcase";
 
 const Home = () => {
-  return "Home";
+  return <Showcase />;
 };
 
 export default Home;
