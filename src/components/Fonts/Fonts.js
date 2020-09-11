@@ -18,29 +18,18 @@ const propTypes = {
  */
 const defaultProps = {
   fonts: [
-    { id: shortid.generate(), name: "Black Mamba", familyName: "BlackMamba" },
+    {
+      id: shortid.generate(),
+      name: "Black Mamba",
+      familyName: "BlackMambaTrial-Venom-WebTrial",
+    },
     {
       id: shortid.generate(),
       name: "Galapagos ABC Black",
-      familyName: "GalapagosABCTrialBlack",
+      familyName: "GalapagosABCTrial-Black",
     },
   ],
 };
-
-/**
- * Defines the font styles
- */
-const BlackMambaCSS = css`
-  font-family: "BlackMambaTrial-Venom-WebTrial";
-`;
-
-const GalapagosABCTrialBlackCSS = css`
-  font-family: "GalapagosABCTrial-Black";
-`;
-
-const MonospaceCSS = css`
-  font-family: "monospace";
-`;
 
 /**
  * Returns a specific `font-familyName` CSS value for a font
@@ -49,17 +38,18 @@ const MonospaceCSS = css`
  */
 const getFontFamilyCSS = (props) => {
   const { name } = props;
+  const { fonts } = defaultProps;
 
-  console.log("name:", name);
+  const font = fonts.find((item) => item.name === name);
+  const { familyName } = font;
 
-  switch (name) {
-    case "Black Mamba":
-      return BlackMambaCSS;
-    case "Galapagos ABC Black":
-      return GalapagosABCTrialBlackCSS;
-    default:
-      return MonospaceCSS;
-  }
+  return font
+    ? css`
+        font-family: ${familyName};
+      `
+    : css`
+        font-family: monospace;
+      `;
 };
 
 /**
