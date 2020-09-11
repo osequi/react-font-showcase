@@ -2,10 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import FontsListItem, {
-  FontsListItemPropTypes,
-  FontsListItemDefaultProps,
-} from "../FontsListItem";
+import FontsListItem from "../FontsListItem";
 import { FontsPropTypes, FontsDefaultProps } from "../Fonts";
 
 /**
@@ -13,6 +10,7 @@ import { FontsPropTypes, FontsDefaultProps } from "../Fonts";
  */
 const propTypes = {
   ...FontsPropTypes,
+  displayText: PropTypes.string,
 };
 
 /**
@@ -20,6 +18,7 @@ const propTypes = {
  */
 const defaultProps = {
   ...FontsDefaultProps,
+  displayText: "",
 };
 
 /**
@@ -31,11 +30,12 @@ const Container = styled("div")((props) => ({}));
  * Displays the component
  */
 const FontsList = (props) => {
-  const { fonts } = props;
+  const { fonts, displayText } = props;
 
   const fontsList = fonts.map((item) => {
     const { id } = props;
-    return <FontsListItem id={id} {...item} />;
+
+    return <FontsListItem id={id} font={item} displayText={displayText} />;
   });
 
   return <Container className="FontsList">{fontsList}</Container>;

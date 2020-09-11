@@ -5,17 +5,26 @@ import styled from "styled-components";
 /**
  * Imports other components and hooks
  */
-import FontsList from "../FontsList";
+import FontsList, {
+  FontsListPropTypes,
+  FontsListDefaultProps,
+} from "../FontsList";
 
 /**
  * Defines the prop types
  */
-const propTypes = {};
+const propTypes = {
+  fontsList: PropTypes.shape(FontsListPropTypes),
+  displayText: PropTypes.string,
+};
 
 /**
  * Defines the default props
  */
-const defaultProps = {};
+const defaultProps = {
+  fontsList: FontsListDefaultProps,
+  displayText: "Coming soon",
+};
 
 /**
  * Styles the component container
@@ -30,7 +39,7 @@ const Container = styled("section")((props) => ({
 const Showcase = (props) => {
   return (
     <Container className="Showcase">
-      <FontsList />
+      <FontsList {...props} />
     </Container>
   );
 };

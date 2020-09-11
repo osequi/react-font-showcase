@@ -11,14 +11,16 @@ import Font, { FontPropTypes, FontDefaultProps } from "../Font";
  * Defines the prop types
  */
 const propTypes = {
-  ...FontPropTypes,
+  font: PropTypes.shape(FontPropTypes),
+  displayText: PropTypes.string,
 };
 
 /**
  * Defines the default props
  */
 const defaultProps = {
-  ...FontDefaultProps,
+  font: FontDefaultProps,
+  displayText: "",
 };
 
 /**
@@ -30,10 +32,14 @@ const Container = styled("div")((props) => ({}));
  * Displays the component
  */
 const FontsListItem = (props) => {
-  const { name } = props;
+  const { font, displayText } = props;
+  const { name } = font;
+
+  const text = displayText !== "" ? displayText : name;
+
   return (
     <Container className="FontsListItem">
-      <Font name={name} />
+      <Font {...font}>{text}</Font>
     </Container>
   );
 };
