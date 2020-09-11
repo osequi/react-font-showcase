@@ -33,6 +33,11 @@ const defaultProps = {
       name: "Galapagos C Black",
       familyName: "GalapagosCTrial-Black",
     },
+    {
+      id: shortid.generate(),
+      name: "Iz Oscel",
+      familyName: "iz-oscel3z-script",
+    },
   ],
 };
 
@@ -67,6 +72,7 @@ const Fonts = (props) => {
 		  @import '/fonts/black-mamba/black-mamba.css';
 		  @import '/fonts/Galapagos-B-Trials-Web/GalapagosBTrial-Black.css';
 		  @import '/fonts/Galapagos-C-Trials-Web/GalapagosCTrial-Black.css';
+		  @import '/fonts/Iz-Oscel/iz-oscel.css';
 		  `}</style>
     </Head>
   );
