@@ -27,3 +27,5 @@ Visit https://react-font-showcase.vercel.app
   </style>
 </Head>
 ```
+
+- However this injects the style inside `<head>` and makes it un-optimized on render
