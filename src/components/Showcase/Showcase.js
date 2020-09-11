@@ -17,7 +17,7 @@ const defaultProps = {};
  * Styles the component container
  */
 const Container = styled("section")((props) => ({
-  fontFamily: "BlackMambaTrial-Venom-WebTrial",
+  fontFamily: "GalapagosABCTrial-Black",
   fontSize: "150%",
 }));
 

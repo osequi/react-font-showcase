@@ -7,7 +7,10 @@ import Head from "next/head";
 const Fonts = (props) => {
   return (
     <Head>
-      <style>{`@import '/fonts/black-mamba/black-mamba.css'`}</style>
+      <style>{`
+		  @import '/fonts/black-mamba/black-mamba.css';
+		  @import '/fonts/Galapagos-ABC-Trials-Web/GalapagosABCTrial-Black.css'
+		  `}</style>
     </Head>
   );
 };
