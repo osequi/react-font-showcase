@@ -1,1 +1,1 @@
-export { default, BlackMambaCSS, GalapagosABCTrialBlackCSS } from "./Fonts";
+export { default } from "./Fonts";

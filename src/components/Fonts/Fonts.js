@@ -2,14 +2,6 @@ import React from "react";
 import Head from "next/head";
 import { css } from "styled-components";
 
-const BlackMambaCSS = css`
-  font-family: "BlackMambaTrial-Venom-WebTrial";
-`;
-
-const GalapagosABCTrialBlackCSS = css`
-  font-family: "GalapagosABCTrial-Black";
-`;
-
 /**
  * Displays the component
  */
@@ -25,4 +17,3 @@ const Fonts = (props) => {
 };
 
 export default Fonts;
-export { BlackMambaCSS, GalapagosABCTrialBlackCSS };
