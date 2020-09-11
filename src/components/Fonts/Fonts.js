@@ -18,7 +18,7 @@ const MonospaceCSS = css`
 `;
 
 /**
- * Loads a specific `font-family` CSS value for each font
+ * Returns a specific `font-family` CSS value for a font
  * @param  {object} props The props identifying a font family
  * @return {object}       The CSS definition for the font family
  */
