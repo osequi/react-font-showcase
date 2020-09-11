@@ -25,8 +25,8 @@ const defaultProps = {
     },
     {
       id: shortid.generate(),
-      name: "Galapagos ABC Black",
-      familyName: "GalapagosABCTrial-Black",
+      name: "Galapagos B Black",
+      familyName: "GalapagosBTrial-Black",
     },
   ],
 };
@@ -60,7 +60,7 @@ const Fonts = (props) => {
     <Head>
       <style>{`
 		  @import '/fonts/black-mamba/black-mamba.css';
-		  @import '/fonts/Galapagos-ABC-Trials-Web/GalapagosABCTrial-Black.css'
+		  @import '/fonts/Galapagos-B-Trials-Web/GalapagosBTrial-Black.css'
 		  `}</style>
     </Head>
   );
