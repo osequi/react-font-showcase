@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "GalapagosCTrial-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("GalapagosCTrial-Black"),
+    url("GalapagosCTrial-Black.woff") format("woff");
+}
