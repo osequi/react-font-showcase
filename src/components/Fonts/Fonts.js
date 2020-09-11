@@ -43,6 +43,16 @@ const defaultProps = {
       name: "mandatetrinkaAD68",
       familyName: "mandatetrinkaAD68",
     },
+    {
+      id: shortid.generate(),
+      name: "Desk bound",
+      familyName: "desk-bound",
+    },
+    {
+      id: shortid.generate(),
+      name: "Masthead Black",
+      familyName: "masthead-black",
+    },
   ],
 };
 
@@ -79,6 +89,8 @@ const Fonts = (props) => {
 		  @import '/fonts/Galapagos-C-Trials-Web/GalapagosCTrial-Black.css';
 		  @import '/fonts/Iz-Oscel/iz-oscel.css';
 		  @import '/fonts/mandatetrinkaAD68/mandatetrinkaAD68.css';
+		  @import '/fonts/Desk-bound/desk-bound.css';
+		  @import '/fonts/Masthead-Black/masthead-black.css';
 		  `}</style>
     </Head>
   );

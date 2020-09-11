@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "masthead-black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("masthead-black"), url("masthead-black.ttf") format("truetype");
+}

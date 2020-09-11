@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "desk-bound";
+  font-style: normal;
+  font-weight: normal;
+  src: local("desk-bound"), url("desk-bound.ttf") format("truetype");
+}
