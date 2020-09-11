@@ -38,6 +38,11 @@ const defaultProps = {
       name: "Iz Oscel",
       familyName: "iz-oscel3z-script",
     },
+    {
+      id: shortid.generate(),
+      name: "mandatetrinkaAD68",
+      familyName: "mandatetrinkaAD68",
+    },
   ],
 };
 
@@ -73,6 +78,7 @@ const Fonts = (props) => {
 		  @import '/fonts/Galapagos-B-Trials-Web/GalapagosBTrial-Black.css';
 		  @import '/fonts/Galapagos-C-Trials-Web/GalapagosCTrial-Black.css';
 		  @import '/fonts/Iz-Oscel/iz-oscel.css';
+		  @import '/fonts/mandatetrinkaAD68/mandatetrinkaAD68.css';
 		  `}</style>
     </Head>
   );
